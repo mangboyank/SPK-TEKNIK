@@ -1,0 +1,6 @@
+{
+  "name": "TEKNIK GIT - Sistem SPK & Approval",
+  "description": "Aplikasi Surat Perintah Kerja (SPK) dengan approval berjenjang, verifikasi teknis oleh SPV dan Head, notifikasi real-time, statistik performa teknisi, ekspor XLS, dan skema backup Firebase & Google Spreadsheet.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

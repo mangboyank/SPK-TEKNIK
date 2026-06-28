@@ -1,0 +1,90 @@
+{
+  "collections": [
+    {
+      "name": "spks",
+      "fields": [
+        { "name": "tanggalPengajuan", "type": "string" },
+        { "name": "namaMesin", "type": "string" },
+        { "name": "diajukanOleh", "type": "string" },
+        { "name": "bagian", "type": "string" },
+        { "name": "deskripsiMasalah", "type": "string" },
+        { "name": "status", "type": "string" },
+        { "name": "createdAt", "type": "string" },
+        { "name": "approvedAt", "type": "string" },
+        { "name": "approvedBy", "type": "string" },
+        { "name": "rejectedAt", "type": "string" },
+        { "name": "rejectedBy", "type": "string" },
+        { "name": "rejectionReason", "type": "string" },
+        { "name": "tindakPerbaikan", "type": "string" },
+        { "name": "perbaikanSelesaiAt", "type": "string" },
+        { "name": "tanggalPerbaikan", "type": "string" },
+        { "name": "jenisPekerjaan", "type": "string" },
+        { "name": "teknisiNama", "type": "string" },
+        { "name": "verifiedBySPV", "type": "boolean" },
+        { "name": "verifiedBySPVAt", "type": "string" },
+        { "name": "verifiedBySPVNama", "type": "string" },
+        { "name": "verifiedByHead", "type": "boolean" },
+        { "name": "verifiedByHeadAt", "type": "string" },
+        { "name": "verifiedByHeadNama", "type": "string" },
+        { "name": "approvedByDeptHead", "type": "boolean" },
+        { "name": "deptHeadName", "type": "string" },
+        { "name": "approvedByDeptHeadAt", "type": "string" },
+        { "name": "approvalDurationMinutes", "type": "number" },
+        { "name": "repairDurationMinutes", "type": "number" }
+      ],
+      "rules": [
+        {
+          "allow": "read, write",
+          "condition": "true"
+        }
+      ]
+    },
+    {
+      "name": "notifications",
+      "fields": [
+        { "name": "title", "type": "string" },
+        { "name": "message", "type": "string" },
+        { "name": "timestamp", "type": "string" },
+        { "name": "role", "type": "string" },
+        { "name": "read", "type": "boolean" },
+        { "name": "spkId", "type": "string" }
+      ],
+      "rules": [
+        {
+          "allow": "read, write",
+          "condition": "true"
+        }
+      ]
+    },
+    {
+      "name": "backupLogs",
+      "fields": [
+        { "name": "timestamp", "type": "string" },
+        { "name": "type", "type": "string" },
+        { "name": "status", "type": "string" },
+        { "name": "recordsSynced", "type": "number" },
+        { "name": "details", "type": "string" }
+      ],
+      "rules": [
+        {
+          "allow": "read, write",
+          "condition": "true"
+        }
+      ]
+    },
+    {
+      "name": "config",
+      "fields": [
+        { "name": "Teknik", "type": "string" },
+        { "name": "SPV", "type": "string" },
+        { "name": "Head", "type": "string" }
+      ],
+      "rules": [
+        {
+          "allow": "read, write",
+          "condition": "true"
+        }
+      ]
+    }
+  ]
+}
